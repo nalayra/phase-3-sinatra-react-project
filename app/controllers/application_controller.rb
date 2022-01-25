@@ -3,7 +3,22 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
-    { message: "Good luck with your project!" }.to_json
+    'Welcome'
   end
-      
+
+  get '/foods' do
+    foods = Food.all
+    foods.to_json
+  end      
+
+  get '/foods/sort_:sort' do
+    foods = Food.all.order(calories: params[:sort])
+    foods.to_json
+  end
+
+  get '/foods/:category' do
+    foods = Food.select {|x| x.category == "#{params[:category]}"}
+    foods.to_json
+  end
+
 end
