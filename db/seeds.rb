@@ -2,12 +2,12 @@ puts "🌱 Seeding spices..."
 
 # Seed your database here
 
-Food.create(name: 'Wheat Bread', calories: 5, category: 'bread', image: '')
-Food.create(name: 'White Bread', calories: 5, category: 'bread', image: '')
-Food.create(name: 'Rye Bread', calories: 5, category: 'bread', image: '')
-Food.create(name: 'Sourdough Bread', calories: 5, category: 'bread', image: '')
-Food.create(name: 'Dutch Crunch Bread', calories: 5, category: 'bread', image: '')
-Food.create(name: 'Multigrain Bread', calories: 5, category: 'bread', image: '')
+Food.create(name: 'Wheat Bread', calories: 69, category: 'bread', image: '')
+Food.create(name: 'White Bread', calories: 79, category: 'bread', image: '')
+Food.create(name: 'Rye Bread', calories: 65, category: 'bread', image: '')
+Food.create(name: 'Sourdough Bread', calories: 185, category: 'bread', image: '')
+Food.create(name: 'Dutch Crunch Bread', calories: 70, category: 'bread', image: '')
+Food.create(name: 'Multigrain Bread', calories: 80, category: 'bread', image: '')
 Food.create(name: 'Egg', calories: 78, category: 'protein', image: 'https://www.google.com/search?q=calories+per+egg&sxsrf=AOaemvJl-05YNwtMhUFb_1_dCplgkwAgpw:1643145280183&tbm=isch&source=iu&ictx=1&vet=1&fir=QrE5ROPTj7EWlM%252CBIulLaDMjJ-M9M%252C%252Fm%252F033cnk%253BSPIvoxIlXWkpHM%252C1bnWKX6UE3NvdM%252C_%253BbUCb-l600uJ77M%252CFeHsFSixog9ySM%252C_%253BZcyZisj9cTdEjM%252CmyUJq7XUy9HtiM%252C_&usg=AI4_-kTrryldm3UJ0gOkNvCSK6PN2mu4gA&sa=X&ved=2ahUKEwiK1vSV6c31AhWwIjQIHXeoDoYQ_B16BAg2EAE#imgrc=QrE5ROPTj7EWlM')
 Food.create(name: 'Butter', calories: 100, category: 'dairy', image: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fsolidstarts.com%2Fwp-content%2Fuploads%2FButter-for-Babies-scaled.jpg&imgrefurl=https%3A%2F%2Fsolidstarts.com%2Ffoods%2Fbutter%2F&tbnid=HDnX2Z44Ypk2QM&vet=12ahUKEwiH9v_f6c31AhWoGTQIHX9nAQoQMygAegUIARDwAg..i&docid=Bl25T5rxYy5HzM&w=2560&h=1920&itg=1&q=butter&ved=2ahUKEwiH9v_f6c31AhWoGTQIHX9nAQoQMygAegUIARDwAg')
 Food.create(name: 'Ketchup', calories: 20, category: 'condiment', image: '')
