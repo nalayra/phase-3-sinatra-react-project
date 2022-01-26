@@ -6,7 +6,7 @@ class ApplicationController < Sinatra::Base
   get "/" do
     'Welcome'
   end
-
+# hellooooo
   get '/foods' do
     foods = Food.all
     foods.to_json
