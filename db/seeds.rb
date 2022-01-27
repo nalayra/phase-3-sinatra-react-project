@@ -57,6 +57,12 @@ Food.create(name: 'Parmesan Cheese', calories: 392, category: 'dairy', image: 'h
 Food.create(name: 'Velveeta Cheese', calories: 303, category: 'dairy', image: 'https://images.albertsons-media.com/is/image/ABS/960053589?$ecom-pdp-desktop$&defaultImage=Not_Available&defaultImage=Not_Available')
 Food.create(name: 'Sour Cream', calories: 198, category: 'dairy', image: 'https://images.heb.com/is/image/HEBGrocery/000314020')
 
+10.times {Meal.create()}
 
 
+
+Eat.create(food_id: Food.first.id, meal_id: Meal.first.id)
+Eat.create(food_id: Food.second.id, meal_id: Meal.first.id)
+Eat.create(food_id: Food.third.id, meal_id: Meal.first.id)
+Eat.create(food_id: Food.last.id, meal_id: Meal.first.id)
 puts "✅ Done seeding!"

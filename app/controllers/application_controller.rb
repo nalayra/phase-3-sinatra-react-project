@@ -34,4 +34,21 @@ class ApplicationController < Sinatra::Base
     foods.to_json
   end
 
+  get '/eats' do
+    eats = Meal.all
+    eats.to_json(include: :foods)
+      # { only: [:name, :calories])
+    # cals = Eat.first.cal_total
+    # names = Eat.first.list_names
+    # cals.to_json
+    # names.to_json
+    # names.to_json
+    # (only: [:id, :title, :genre, :price], include: {
+    #   reviews: { only: [:comment, :score], include: {
+    #     user: { only: [:name] }
+      
+  end
+
+
+
 end
