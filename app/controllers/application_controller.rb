@@ -70,15 +70,16 @@ class ApplicationController < Sinatra::Base
     foods_arr = []
     calorie_total = 0
     x=(Meal.all.length) +1
-    while i < params.length 
+    while i < (params.length) -1
       Eat.create(food_id: params["#{i}"][:id],
         meal_id: x).to_json
-    foods_arr << params["#{i}"][:name]
-    calorie_total += params["#{i}"][:calories]
-    i += 1
-  end
-            # eat.to_json
-      Meal.create(foods_list: foods_arr, calorie_count: calorie_total )          
+      foods_arr << params["#{i}"][:name] + ", "
+      calorie_total += params["#{i}"][:calories]
+      i += 1
+      # eat.to_json
+      new_day = params[:day]
+    end
+    Meal.create(foods_list: foods_arr, calorie_count: calorie_total, day: new_day )          
   end
 
 
