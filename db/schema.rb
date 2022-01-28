@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 2022_01_26_195619) do
   end
 
   create_table "meals", force: :cascade do |t|
+    t.string "foods_list"
+    t.integer "calorie_count"
   end
 
 end
